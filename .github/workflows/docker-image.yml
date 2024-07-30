@@ -22,4 +22,4 @@ jobs:
           file: ./Dockerfile
           platforms: ${{ matrix.platforms }}
           push: true
-          outputs: type=image,name=${{ github.repoistory }}
+          tags: ${{ github.repoistory }}:latest
