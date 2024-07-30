@@ -8,7 +8,7 @@ on:
   schedule:
     - cron: 0 12 */1 * *
 env:
-  REGISTRY: docker.pkg.github.com
+  REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 jobs:
   build:
