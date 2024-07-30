@@ -20,6 +20,6 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          platforms: ${{ matrix.platforms }}
+          platforms: "{{ matrix.platforms }}"
           push: true
-          tags: ${{ github.repoistory }}:latest
+          tags: "{{github.repoistory}}:latest"
